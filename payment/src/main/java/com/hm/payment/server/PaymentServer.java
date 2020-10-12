@@ -18,19 +18,12 @@ public class PaymentServer {
         return "线程池"+Thread.currentThread().getName()+"paymentId"+id+"\t"+"(*^▽^*)";
     }
 
-    @HystrixCommand(fallbackMethod = "paymentInfo_isTmeOutHandler",commandProperties =
-            {@HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds",value = "3000")
-    })
     public String paymentInfo_isTmeOut(Integer id){
         try {
-            TimeUnit.SECONDS.sleep(5);
+            TimeUnit.SECONDS.sleep(6);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
         return "线程池"+Thread.currentThread().getName()+"paymentId"+id+"\t"+"(*^▽^*)，耗时";
-    }
-
-    public String paymentInfo_isTmeOutHandler(Integer id){
-        return "线程池"+Thread.currentThread().getName()+"paymentInfo_isTmeOutHandler"+"\t"+"o(╥﹏╥)o";
     }
 }

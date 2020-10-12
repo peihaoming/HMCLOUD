@@ -19,3 +19,10 @@ spring:
 feign:
   hystrix:
     enabled: true
+
+logging:
+  level:
+    com.hm.client80.call.HmCloudCallPayment: debug
+ribbon:
+  ReadTimeout : 5000
+  ConnectTimeout : 5000

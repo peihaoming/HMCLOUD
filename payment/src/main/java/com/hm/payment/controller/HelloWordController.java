@@ -18,7 +18,6 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 @RequestMapping("/hello")
-@DefaultProperties(defaultFallback = "paymentInfo_isTmeOutHandler")
 public class HelloWordController {
 
     @Autowired
@@ -39,9 +38,5 @@ public class HelloWordController {
     @HystrixCommand
     public String timeout()  {
         return paymentServer.paymentInfo_isTmeOut(31);
-    }
-
-    public String paymentInfo_isTmeOutHandler(Integer id){
-        return "在下80端口，8082出事了！";
     }
 }

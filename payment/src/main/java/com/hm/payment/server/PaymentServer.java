@@ -1,5 +1,6 @@
 package com.hm.payment.server;
 
+import cn.hutool.core.util.IdUtil;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixProperty;
 import org.springframework.stereotype.Service;
@@ -19,6 +20,7 @@ public class PaymentServer {
     }
 
     public String paymentInfo_isTmeOut(Integer id){
+        String s = IdUtil.simpleUUID();
         try {
             TimeUnit.SECONDS.sleep(6);
         } catch (InterruptedException e) {

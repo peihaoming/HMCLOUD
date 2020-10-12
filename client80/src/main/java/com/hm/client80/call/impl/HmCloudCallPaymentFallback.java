@@ -24,4 +24,9 @@ public class HmCloudCallPaymentFallback implements HmCloudCallPayment {
     public String timeout() {
         return "------HmCloudCallPaymentFallback fall back timeout (灬ꈍ ꈍ灬)";
     }
+
+    @Override
+    public String paymentOrderIsOk(Integer id) {
+        return "------paymentOrderIsOk fall back timeout (灬ꈍ ꈍ灬)";
+    }
 }

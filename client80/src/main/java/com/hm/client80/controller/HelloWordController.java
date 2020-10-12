@@ -37,4 +37,9 @@ public class HelloWordController {
     public String timeout()  {
         return HmCloudCallPayment.timeout();
     }
+
+    @GetMapping("/get/order/{id}")
+    public String paymentOrderIsOk(@PathVariable("id") Integer id){
+        return HmCloudCallPayment.paymentOrderIsOk(id);
+    }
 }

@@ -23,4 +23,7 @@ public interface HmCloudCallPayment {
      String ok() ;
     @GetMapping("/get/timeout")
      String timeout();
+
+    @GetMapping("/get/order/{id}")
+    String paymentOrderIsOk(@PathVariable("id") Integer id);
 }

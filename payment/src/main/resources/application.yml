@@ -17,3 +17,7 @@ eureka:
 spring:
   application:
     name: HMCLOUD-PAYMENT
+feign:
+  hystrix:
+    enabled: true
+

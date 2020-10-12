@@ -1,10 +1,10 @@
-package com.hm.cloudapicommonm;
+package com.hm.dashboard9001;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class CloudApiCommonmApplicationTests {
+class Dashboard9001ApplicationTests {
 
     @Test
     void contextLoads() {

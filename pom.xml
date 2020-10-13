@@ -9,12 +9,6 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
-    <parent>
-        <groupId>org.springframework.boot</groupId>
-        <version>2.3.4.RELEASE</version>
-        <artifactId>spring-boot-starter-parent</artifactId>
-    </parent>
-
 
     <modules>
         <module>eureka</module>
@@ -22,7 +16,6 @@
         <module>client80</module>
         <module>cloud-api-common</module>
         <module>dashboard9001</module>
-        <module>cloud-gateway-gateway9527</module>
     </modules>
 
     <!-- 统一管理jar包版本 -->

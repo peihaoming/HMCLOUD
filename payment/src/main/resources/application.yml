@@ -21,3 +21,6 @@ feign:
   hystrix:
     enabled: true
 
+logging:
+  file:
+    path: 'logs/hmcloud/${spring.application.name}/'

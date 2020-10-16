@@ -1,0 +1,33 @@
+
+server:
+  port: 8084
+
+spring:
+  application:
+    name: HMCLOUD-CONFIG-CLIENT
+  cloud:
+    config:
+      label: main
+      name: application
+      profile: dev
+      uri: http://localhost:8083
+
+
+eureka:
+  instance:
+    hostname: cloud-config-service
+    prefer-ip-address: true
+    lease-renewal-interval-in-seconds: 5
+    lease-expiration-duration-in-seconds: 15
+
+  client:
+    registry-fetch-interval-seconds: 5
+    service-url:
+      defaultZone: http://localhost:8001/eureka/
+
+management:
+  endpoint:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

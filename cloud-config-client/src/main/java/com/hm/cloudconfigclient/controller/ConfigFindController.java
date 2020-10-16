@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RefreshScope
 public class ConfigFindController {
 
-    @Value("${config.version}")
+    @Value("${eureka.instance.hostname}")
     private String configInfo;
 
     @GetMapping("config")

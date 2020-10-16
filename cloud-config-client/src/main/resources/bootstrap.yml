@@ -1,0 +1,19 @@
+
+spring:
+  application:
+    name: HMCLOUD-CONFIG-CLIENT
+  cloud:
+    config:
+      label: main
+      name: hmcloud-config-client
+      profile: dev
+      uri: http://localhost:8083
+
+
+
+management:
+  endpoint:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

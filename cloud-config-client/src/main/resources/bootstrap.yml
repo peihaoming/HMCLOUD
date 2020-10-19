@@ -8,6 +8,11 @@ spring:
       name: hmcloud-config-client
       profile: dev
       uri: http://localhost:8083
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
 
 
 

@@ -11,6 +11,11 @@ spring:
           uri: https://github.com/peihaoming/hmconfig.git
           default-label: main
           search-paths: hmconfig
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
 
 
 eureka:
@@ -24,3 +29,9 @@ eureka:
     registry-fetch-interval-seconds: 5
     service-url:
       defaultZone: http://localhost:8001/eureka/
+#rabbitmq 相关配置 暴露bus刷新配置的节点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: 'bus-refresh'

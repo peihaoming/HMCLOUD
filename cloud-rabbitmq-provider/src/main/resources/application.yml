@@ -1,0 +1,35 @@
+server:
+  port: 8085
+spring:
+  application:
+    name: cloud-rabbitmq-provider
+  cloud:
+    stream:
+      binders:  #配置要绑定的rabbitmq服务信息
+        defaultRabbit:
+          type: rabbit
+          environment:
+            spring:
+              rabbitmq:
+                host: localhost
+                port: 5672
+                username: guest
+                password: guest
+      bindings:
+        output:
+          destination:
+          content-type: application/json
+          binder:
+
+eureka:
+  instance:
+    hostname: cloud-config-service
+    prefer-ip-address: true
+    lease-renewal-interval-in-seconds: 5
+    lease-expiration-duration-in-seconds: 15
+    instance-id: send-8085.com
+
+  client:
+    registry-fetch-interval-seconds: 5
+    service-url:
+      defaultZone: http://localhost:8001/eureka/

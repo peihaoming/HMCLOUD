@@ -13,8 +13,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class SendMessageController {
 
+    private final MyMessageProvider MyMessageProvider;
+
     @Autowired
-    private MyMessageProvider MyMessageProvider;
+    public SendMessageController( MyMessageProvider MyMessageProvider) {
+        this.MyMessageProvider = MyMessageProvider;
+    }
 
     @GetMapping("/send")
     public void sendMessage(){

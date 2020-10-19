@@ -17,7 +17,7 @@ spring:
                 password: guest
       bindings:
         output:
-          destination:
+          destination: studyExchange
           content-type: application/json
           binder:
 

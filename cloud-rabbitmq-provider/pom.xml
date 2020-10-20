@@ -7,16 +7,11 @@
         <version>1.0-SNAPSHOT</version>
         <artifactId>hmcloud</artifactId>
     </parent>
-    <groupId>com.example</groupId>
-    <artifactId>demo</artifactId>
+    <groupId>com.hm</groupId>
+    <artifactId>cloud-rabbitmq-provider</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>cloud-rabbitmq-provider</name>
     <description>rabbit发送者</description>
-
-    <properties>
-        <java.version>1.8</java.version>
-        <spring-cloud.version>Hoxton.SR8</spring-cloud.version>
-    </properties>
 
     <dependencies>
         <dependency>

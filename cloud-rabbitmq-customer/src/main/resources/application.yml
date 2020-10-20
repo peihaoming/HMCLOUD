@@ -1,8 +1,9 @@
+
 server:
-  port: 8085
+  port: 8086
 spring:
   application:
-    name: HMCLOUD-RABBITMQ-PROVIDER
+    name: HMCLOUD-RABBITMQ-CSTOMER
   cloud:
     stream:
       binders:  #配置要绑定的rabbitmq服务信息
@@ -16,7 +17,7 @@ spring:
                 username: guest
                 password: guest
       bindings:
-        output:
+        input:
           destination: studyExchange
           content-type: application/json
 
@@ -26,7 +27,7 @@ eureka:
     prefer-ip-address: true
     lease-renewal-interval-in-seconds: 5
     lease-expiration-duration-in-seconds: 15
-    instance-id: send-8085.com
+    instance-id: send-80856.com
 
   client:
     registry-fetch-interval-seconds: 5

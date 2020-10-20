@@ -1,0 +1,24 @@
+
+spring:
+  application:
+    name: HMCLOUD-CONFIG-CLIENT
+  cloud:
+    config:
+      label: main
+      name: hmcloud-config-client
+      profile: dev
+      uri: http://localhost:8083
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+
+
+management:
+  endpoint:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

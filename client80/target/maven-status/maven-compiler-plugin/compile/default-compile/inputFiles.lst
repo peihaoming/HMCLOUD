@@ -1,0 +1,5 @@
+/Users/peihaoming/javacode/study/hmcloud/client80/src/main/java/com/hm/client80/config/FeignConfig.java
+/Users/peihaoming/javacode/study/hmcloud/client80/src/main/java/com/hm/client80/call/HmCloudCallPayment.java
+/Users/peihaoming/javacode/study/hmcloud/client80/src/main/java/com/hm/client80/controller/HelloWordController.java
+/Users/peihaoming/javacode/study/hmcloud/client80/src/main/java/com/hm/client80/call/impl/HmCloudCallPaymentFallback.java
+/Users/peihaoming/javacode/study/hmcloud/client80/src/main/java/com/hm/client80/Client80Application.java

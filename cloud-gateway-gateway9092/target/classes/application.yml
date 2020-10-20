@@ -1,0 +1,37 @@
+server:
+  port: 9092
+
+
+eureka:
+  instance:
+    hostname: cloud-gateway-service
+    prefer-ip-address: true
+    lease-renewal-interval-in-seconds: 5
+    lease-expiration-duration-in-seconds: 15
+
+  client:
+    registry-fetch-interval-seconds: 5
+    service-url:
+      defaultZone: http://localhost:8001/eureka/
+
+
+
+spring:
+  application:
+    name: HMCLOUD-GATEWAY
+  cloud:
+    discovery:
+      locator:
+        enabled: true    #开启动态路由
+    gateway:
+      routes:
+        - id: payment_rote
+          uri: lb://HMCLOUD-PAYMENT
+          predicates:
+            - Path= /hello/**
+            - After=2020-10-13T17:25:28.246+08:00[Asia/Shanghai]
+          filters:
+
+
+
+

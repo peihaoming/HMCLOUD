@@ -19,6 +19,7 @@ spring:
         output:
           destination: studyExchange
           content-type: application/json
+          binder:
 
 eureka:
   instance:

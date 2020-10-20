@@ -1,0 +1,5 @@
+com/hm/client80/controller/HelloWordController.class
+com/hm/client80/Client80Application.class
+com/hm/client80/call/impl/HmCloudCallPaymentFallback.class
+com/hm/client80/call/HmCloudCallPayment.class
+com/hm/client80/config/FeignConfig.class

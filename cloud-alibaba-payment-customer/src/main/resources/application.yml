@@ -1,0 +1,23 @@
+
+server:
+  port: 9003
+
+spring:
+  application:
+    name: nacos-payment-provider-customer
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+management:
+  endpoints:
+    web:
+      exposure:
+        include: all
+
+feign:
+  hystrix:
+    enabled: true
+
+service-url:
+  nacos-user-service: http://nacos-payment-provider

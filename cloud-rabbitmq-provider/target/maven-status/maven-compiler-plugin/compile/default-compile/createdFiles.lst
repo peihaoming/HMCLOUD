@@ -1,0 +1,4 @@
+com/hm/cloudrabbitprovider/service/impl/MessageProviderImpl.class
+com/hm/cloudrabbitprovider/controller/SendMessageController.class
+com/hm/cloudrabbitprovider/CloudRabbitmqProviderApplication.class
+com/hm/cloudrabbitprovider/service/MyMessageProvider.class

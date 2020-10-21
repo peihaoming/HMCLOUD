@@ -20,7 +20,7 @@ spring:
         input:
           destination: studyExchange
           content-type: application/json
-
+          group: group1
 eureka:
   instance:
     hostname: cloud-config-service
